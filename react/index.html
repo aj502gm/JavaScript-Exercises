@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <script type = 'text/babel'>
+            const app = document.getElementById('app');
+            //const Button = React.createElement('button', {className: 'btn'}, 'Hello there', onClick = () => {alert('React +100')}); //CUALQUIER PROPIEDAD, NODO, onclick
+            const Button = () => <button className ='btn' onClick = {alert('React')}>Boton JSX</button> //SE PUEDE USAR COMO ETIQUETA JSX
+            ReactDOM.render(<Button/>, app); //elemento y en donde
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
